@@ -1,7 +1,6 @@
 {
   "name": "hianime-v2",
   "version": "2.2.0",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ryanwtf7/hianime-api.git"
@@ -13,7 +12,7 @@
   "scripts": {
     "dev": "bun run --hot index.ts",
     "start": "bun index.ts",
-    "build": "bun build index.ts --outdir ./dist --target bun",
+    "build:bun": "bun build index.ts --outdir ./dist --target bun",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -24,12 +23,14 @@
     "test:jest": "NODE_OPTIONS='--experimental-vm-modules' jest",
     "test:all": "bun run test && bun run test:jest",
     "clean": "rm -rf dist node_modules/.cache",
-    "vercel-build": "ncc build api/index.ts -o api"
+    "vercel-build": "esbuild api/_handler.ts --bundle --platform=node --format=cjs --outfile=api/index.js"
   },
   "dependencies": {
     "@hono/node-server": "^1.8.2",
     "axios": "^1.13.6",
-    "cheerio": "^1.0.0-rc.12"
+    "cheerio": "^1.0.0-rc.12",
+    "esbuild": "^0.28.0",
+    "hono": "^4.12.5"
   },
   "devDependencies": {
     "@types/axios": "^0.14.4",

@@ -7,7 +7,7 @@
 ![Bun](https://img.shields.io/badge/bun-%23000000.svg?style=flat&logo=bun&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
 
-**A RESTful API that utilizes web scraping to fetch anime content from hianime.to**
+**A RESTful API that utilizes web scraping to fetch anime content from hianime.lc**
 
 [Documentation](#documentation) • [Installation](#installation) • [API Endpoints](#api-endpoints) • [Development](#development)
 
@@ -70,7 +70,7 @@
 
 ## Overview
 
-hianime-api is a comprehensive RESTful API that provides endpoints to retrieve anime details, episodes, and streaming links by scraping content from hianime.to. Built with modern web technologies, it offers a robust solution for anime content aggregation.
+hianime-api is a comprehensive RESTful API that provides endpoints to retrieve anime details, episodes, and streaming links by scraping content from hianime.lc. Built with modern web technologies, it offers a robust solution for anime content aggregation.
 
 ## Important Notice
 
@@ -78,7 +78,7 @@ hianime-api is a comprehensive RESTful API that provides endpoints to retrieve a
 
 1. This API is recommended for **personal use only**. Deploy your own instance and customize it as needed.
 
-2. This API is just an **unofficial API for [hianime.to](https://hianime.to)** and is in no other way officially related to the same.
+2. This API is just an **unofficial API for [hianime.lc](https://hianime.lc)** and is in no other way officially related to the same.
 
 3. The content that this API provides is not mine, nor is it hosted by me. These belong to their respective owners. This API just demonstrates how to build an API that scrapes websites and uses their content.
 
