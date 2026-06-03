@@ -5,9 +5,9 @@
       "DOM",
       "DOM.Iterable"
     ],
-    "module": "commonjs",
+    "module": "node16",
     "target": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "node16",
     "moduleDetection": "force",
     "strict": true,
     "downlevelIteration": true,
