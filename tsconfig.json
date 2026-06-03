@@ -5,9 +5,9 @@
       "DOM",
       "DOM.Iterable"
     ],
-    "module": "esnext",
+    "module": "commonjs",
     "target": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "moduleDetection": "force",
     "strict": true,
     "downlevelIteration": true,
