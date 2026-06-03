@@ -50,7 +50,6 @@ app.onError((err, c) => {
   if (err instanceof AppError) {
     return fail(c, err.message, err.statusCode, err.details);
   }
-
   console.error('Vercel Unexpected Error:', err.message);
   return fail(c, 'Internal server error', 500);
 });
@@ -59,4 +58,6 @@ app.notFound((c) => {
   return fail(c, 'Route not found', 404);
 });
 
-export default handle(app);
+const handler = handle(app);
+export default handler;
+module.exports = handler;
