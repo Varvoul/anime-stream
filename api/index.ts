@@ -58,6 +58,4 @@ app.notFound((c) => {
   return fail(c, 'Route not found', 404);
 });
 
-const handler = handle(app);
-export default handler;
-module.exports = handler;
+export default handle(app);
