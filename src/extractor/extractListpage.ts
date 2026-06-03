@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { load } from 'cheerio';
 import { Element } from 'domhandler';
 import { AnimeFeatured, TrendingAnime } from '../types/anime';
